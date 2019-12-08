@@ -1,0 +1,548 @@
+body {
+    background-color: #f4f4f4;
+    color: #545454;
+    font-family: "open sans";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.3;
+    font-smooth: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: 'Leckerli One', cursive;
+}
+h1 a{
+  color: white;
+  font-size: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: #545454;
+}
+a:onhover {
+  cursor: pointer;
+}
+i {
+  color: white;
+}
+
+.content {
+  padding: 0 8%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.content h1, #loadTitle {
+  font-size: 2em;
+}
+
+.content h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.content h1, h2, #loadTitle {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+p, ul li, h2 {
+  margin: 1em 0;
+}
+
+
+header {
+    background-color: #2cc185;
+    display: block;
+    color: white;
+
+    border-bottom: 5px solid #25a370;
+    margin-bottom: 1em;
+}
+
+#head {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+}
+
+#menu_icon {
+  cursor: pointer;
+}
+
+nav {
+    margin-top: 10px;
+    display: none;
+    border-top: 5px solid #25a370;
+    opacity: 0;
+    flex-direction: column;
+    text-align: center;
+    visibility: hidden;
+    transition: visibility .5s ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 5px solid #25a370;
+    color: white;
+}
+
+nav a:hover {
+  background-color: #4ad69e;
+  transition: background-color .3s ease-in-out;
+}
+
+.fa-bars {
+}
+
+.cards div
+{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #25a370;
+    margin:1% 5%;
+    padding:20px;
+    font-size:2em;
+    /* width:300px; */
+    /* height:200px; */
+    flex: 1 1 auto;
+    text-align:center;
+    /* padding-top: 80px; */
+    background-color: #2cc185;
+    cursor: pointer;
+    min-width: 250px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:25%;
+}
+
+.cards div:hover {
+  background-color: #4ad69e;
+  transition: background-color .3s ease-in-out;
+}
+
+
+.cards
+{
+    margin-top: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: stretch;
+    /*flex: 0 1 auto; */
+
+}
+
+.cards a {
+  color: white;
+}
+
+
+
+.companyImg {
+ height: 50px;
+ width: 100px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+
+
+/*All Companies List*/
+
+#companiesList img
+{
+  height: 50px;
+  width:100px;
+}
+
+/* Profile page */
+
+#profilePicture {
+  border-radius: 50%;
+  border: 5px solid #363636;
+  margin-bottom: 30px;
+}
+
+#profileContainer label {
+  border-bottom: 2px solid #545454;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  padding: 0 10% 5px 10%;
+}
+
+/* Forms */
+
+form {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+form input, input[type='search'] {
+  width: 100%;
+  background: transparent;
+  border: 2px solid rgba(84,84,84,0.7);
+  color: #545454;
+  height: 1.6em;
+  font-size: 1em;
+  margin-bottom: 10px;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+  text-align: center;
+}
+form input[type='number'] {
+  background: transparent;
+  border: 0.05em solid rgba(84,84,84,0.7);
+  height: auto;
+  padding: 0.2em;
+  cursor: pointer;
+  color: #545454;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 10px 5px;
+  width: auto;
+  max-width: 7em;
+}
+/*
+width: 5em;
+  margin-left: auto;
+  background: transparent;
+  border: 2px solid rgba(84,84,84,0.7);
+  color: #545454;
+  height: 1.3em;
+  margin-bottom: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+*/
+
+input[type='search'] {
+  max-width: 12em;
+}
+
+form input[type='submit'] {
+  background-color: #2cc185;
+  border: none;
+  height: auto;
+  padding: 0.3em;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 10px 5px;
+  width: auto;
+}
+#removeFavourites {
+  width: 100%;
+}
+
+form input[type='submit']:hover {
+  filter: brightness(110%);
+  transition: filter .3s ease-in-out;
+}
+
+button {
+  background-color: #2cc185;
+  border: none;
+  height: auto;
+  padding: 0.3em;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 10px 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+button:hover {
+  filter: brightness(110%);
+  transition: filter .3s ease-in-out;
+}
+
+/*------------table-------Updates done on 2019-04-04---------------*/
+#preload
+{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+#loader
+{
+  position: relative;
+  top: 15%;
+  left: 38%;
+  border: 25px solid #f4f4f4;
+  border-radius: 50%;
+  border-top: 25px solid #2cc185;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#buttonsTable
+{
+  margin-left:auto; 
+  margin-right:auto;
+}
+table#companyTable td {
+  border: 1px solid grey;
+  padding: 10px;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+#companyTable a {
+  font-weight: bold;
+  font-size: 1em;
+}
+#companiesList
+{
+  height:700px;
+  overflow:scroll;
+  margin-left:auto; 
+  margin-right:auto;
+  display: inline-block;
+  border:10px outset #2cc185;
+}
+#data
+{
+   margin-top: 15px;
+   margin-left:auto; 
+   margin-right:auto;
+   width:100%;
+   border:10px outset #2cc185;
+}
+#data td, #data th
+{
+  border: 1px solid grey;
+  padding: 10px;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+
+#data th:hover
+{
+  background-color: #2cc185;
+   color:white;
+}
+
+#favTable, #porTable
+{
+  margin-bottom: 20px;
+  width:100%;
+  border:10px outset #2cc185;
+}
+
+#website a
+{
+  color:#0000fc;
+}
+
+#favTable td, #porTable td
+{
+   border: 1px solid grey;
+   padding: 10px;
+   text-align: center;
+   vertical-align: baseline;
+}
+
+th {
+  font-size: 1em;
+}
+
+
+
+/*-----------------------------------------------*/
+
+#compSymb /*Title for month stock table*/
+{
+  font-size: 550%;
+  margin-left:auto; 
+  margin-right:auto;
+  font-family:Rockwell Condensed;
+}
+
+#complogo
+{
+  width:30%;
+  height:30%;
+}
+
+
+/*------------form Realtime errors---------------------------*/
+#signup p
+{
+  color:red;
+  display:none;
+}
+
+.errors
+{
+  color:red;
+}
+
+#signLink {
+  font-weight: 900;
+}
+
+
+/* messages for updates */
+
+.message {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* media queries retrieved from https://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 0px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+      font-size: 2.5em;
+    }
+
+    nav a {
+      font-size: 2.5em;
+    }
+
+    .cards div {
+      min-width: 500px;
+    }
+    
+    #companiesList {
+      height: 100%;
+      overflow: none;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 0px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+      font-size: 2.5em;
+    }
+
+    nav a {
+      font-size: 2.5em;
+    }
+
+    .cards div {
+      min-width: 500px;
+    }
+    
+    #companiesList {
+      height: 100%;
+      overflow: none;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 0px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      font-size: 2.5em;
+    }
+
+    nav a {
+      font-size: 2.5em;
+    }
+
+    .cards div {
+      min-width: 500px;
+    }
+    
+    #companiesList {
+      height: 100%;
+      overflow: none;
+    }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* ----------- Galaxy S6 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 0px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 4) {
+    body {
+      font-size: 2.5em;
+    }
+
+    nav a {
+      font-size: 2.5em;
+    }
+
+    .cards div {
+      min-width: 500px;
+    }
+    
+    #companiesList {
+      height: 100%;
+      overflow: none;
+    }
+}
+
+
+ @media (min-width:480px)
+{
+
+}
+
+@media (min-width: 768px)
+ {
+
+ }
+
+
+
+
+/*About Page CSS*/
